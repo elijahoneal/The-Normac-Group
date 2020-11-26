@@ -62,18 +62,24 @@ img {
 a{
     text-decoration: none;
 }
+/*Header*/
+
 header {
-    display:flex;
-    justify-content: space-between;
+	width: 90%;
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 1.5rem auto;
+	font-family: 'Noto Sans TC', sans-serif;
 }
 
 .logo{
-    width:10%;
+    width:60%;
 
 }
 
 .burger-menu .line {
-	background-color:#F97D0A;
+	background-color:#000;
 	width:3rem;
 	height:0.3rem;
 	margin: 0.2rem;
@@ -84,9 +90,8 @@ header {
 }
 
 nav{
-	display:none;
+	/* display:none; */
 	flex-flow: column nowrap;
-	background-color:#F97D0A;
 	
 }
 nav a{
@@ -98,29 +103,78 @@ a:hover {
 	color:#A10C00;
 }
 
-/* Toggle Mobile Nav */
 
-.nav-active{
-		display:flex;
-		flex-flow: row nowrap;
-		justify-content: space-around;
-		align-items: center;
-		width: 100%;
-		line-height: 3rem;
-		font-size: 1.3rem;
-		position: absolute;
-		top: 12rem;
-		left:0;
-		
+/* Main Feature */
+
+.feature {
+	position: relative;
+	text-align: center;
+	font-family: 'Noto Sans TC', sans-serif;
+}
+
+.feature img {
 	
+	width: 90%;
+	margin: 1rem 5%;
+	height:auto;
 }
 
-.toggle .line1{
-	transform: rotate(-45deg) translate(-5px, 6px);
+.feature-text {
+	position: absolute;
+	color: #fff;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width:50%;
+	font-size: 0.8rem;
+	background-color:rgba(2, 22, 103, 0.3);
+	padding: 1rem;
 }
-.toggle .line2{
-	opacity:0;
+
+.feature h1 {
+	font-size:2.5rem;
+	padding: 0.5rem;
+	font-weight: 900;
 }
-.toggle .line3{
-	transform: rotate(45deg) translate(-5px, -6px);
+
+/* Services */
+
+h2 {
+	font-size: 1.8rem;
+	text-align: center;
+	color:#4169e1;
+	padding: 0.5rem 0;
+	font-family: 'Noto Sans TC', sans-serif;
+	font-weight: 700;
+	margin: 1rem auto;
+	border-bottom: 0.1rem solid #4169e1;
+	width: 50%;
+}
+
+.main {
+	font-family: 'Noto Sans TC', sans-serif;
+}
+
+.services , .testimonials{
+	width: 90%;
+	text-align: center;
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+}
+
+h4 {
+	font-weight: 700;
+	font-size: 1.3rem;
+	margin: 1rem auto;
+}
+
+button {
+	width: 50%;
+	margin: 1rem;
+	padding:0.5rem;
+	color:  #4169e1;
+	background-color: #fff;
+	border: 0.2rem solid  #4169e1;
+	font-size: 1.3rem;
 }
