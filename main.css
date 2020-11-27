@@ -69,6 +69,7 @@ header {
 	display:flex;
 	flex-direction: column;
 	align-items: center;
+	justify-content: space-around;
 	margin: 1.5rem auto;
 	font-family: 'Noto Sans TC', sans-serif;
 }
@@ -78,31 +79,52 @@ header {
 
 }
 
-.burger-menu .line {
-	background-color:#000;
-	width:3rem;
-	height:0.3rem;
-	margin: 0.2rem;
-}
+/* Mobile Nav */
 
 .burger-menu {
 	cursor: pointer;
+	margin: 2rem 1rem 1.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color:#000;
+	color: #fff;
+	width:4rem;
+	height:2rem;
 }
 
+.toggle {
+	transform: translateY(2px);
+}
+
+/* Nav */
+
 nav{
-	/* display:none; */
-	flex-flow: column nowrap;
+	display: none;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+	width: 100%;
+	align-items: center;
+	transform: translateY(-3rem);
 	
 }
 nav a{
 	text-decoration: none;
-	color: #FFECC2;
+	color:  #4169e1;
 }
 
 a:hover {
-	color:#A10C00;
+	color:#000;
 }
 
+.nav-active{
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;
+	width: 100%;
+	align-items: center;
+	transform: translateY(0);
+}
 
 /* Main Feature */
 
@@ -110,31 +132,50 @@ a:hover {
 	position: relative;
 	text-align: center;
 	font-family: 'Noto Sans TC', sans-serif;
+
 }
 
 .feature img {
-	
 	width: 90%;
 	margin: 1rem 5%;
 	height:auto;
+	opacity: 0.5;
+}
+
+figcaption {
+	font-size: 0.4rem;
+	font-weight: 100;
 }
 
 .feature-text {
 	position: absolute;
-	color: #fff;
+	color:#fff;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	width:50%;
 	font-size: 0.8rem;
-	background-color:rgba(2, 22, 103, 0.3);
 	padding: 1rem;
+	
+}
+
+.overlay {
+	background-color: #000;
+	position: absolute;
+	width:90%;
+	height:85%;
+	top:48%;
+	left:50%;
+	transform: translate(-50%, -50%);
+	z-index: -1;
+	opacity: 0.7;
 }
 
 .feature h1 {
 	font-size:2.5rem;
 	padding: 0.5rem;
 	font-weight: 900;
+	text-shadow: 0.2rem 0.2rem 1rem #000;
 }
 
 /* Services */
@@ -151,16 +192,17 @@ h2 {
 	width: 50%;
 }
 
-.main {
-	font-family: 'Noto Sans TC', sans-serif;
-}
 
-.services , .testimonials{
+.main{
+	font-family: 'Noto Sans TC', sans-serif;
 	width: 90%;
+	margin: auto;
 	text-align: center;
 	display: flex;
 	flex-flow: column nowrap;
 	align-items: center;
+	justify-content: center;
+	
 }
 
 h4 {
@@ -177,4 +219,33 @@ button {
 	background-color: #fff;
 	border: 0.2rem solid  #4169e1;
 	font-size: 1.3rem;
+}
+
+.service {
+	width: 60%;
+	height: 10rem;
+	margin: 0.2rem;
+}
+
+/* testimonials */
+
+.testimonial {
+	width: 60%;
+	height: 18rem;
+	margin: 0.2rem;
+}
+
+.name {
+	margin-top: 1rem;
+	color:  #4169e1;
+}
+
+/* Footer */
+
+footer {
+	text-align: center;
+	color: #4169e1;
+	font-family: 'Noto Sans TC', sans-serif;
+	font-weight: 100;
+	margin: 3rem auto;
 }
