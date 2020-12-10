@@ -62,6 +62,16 @@ img {
 a{
     text-decoration: none;
 }
+
+body {
+	background-color:#4169e1;
+
+}
+
+#wrapper {
+	background-color: #fff;
+	margin: 5%;
+}
 /*Header*/
 
 header {
@@ -76,7 +86,7 @@ header {
 
 .logo{
     width:60%;
-
+	margin-top: 1.5rem;
 }
 
 /* Mobile Nav */
@@ -136,8 +146,7 @@ a:hover {
 }
 
 .feature img {
-	width: 90%;
-	margin: 1rem 5%;
+	width: 100%;
 	height:auto;
 	opacity: 0.5;
 }
@@ -161,13 +170,8 @@ figcaption {
 
 .overlay {
 	background-color: #000;
-	position: absolute;
 	width:90%;
-	height:85%;
-	top:48%;
-	left:50%;
-	transform: translate(-50%, -50%);
-	z-index: -1;
+	margin: auto;
 	opacity: 0.7;
 }
 
@@ -248,4 +252,22 @@ footer {
 	font-family: 'Noto Sans TC', sans-serif;
 	font-weight: 100;
 	margin: 3rem auto;
+}
+
+/* Tablet Size */
+
+@media only screen and (min-width: 600px) {
+
+	.burger-menu {
+		display: none;
+	}
+
+	.nav {
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: space-around;
+		width: 100%;
+		align-items: center;
+		transform: translateY(0);
+	}
 }
