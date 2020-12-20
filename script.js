@@ -3,12 +3,7 @@ const navSlide = () =>{
     const nav = document.querySelector('.nav-links');
     burger.addEventListener('click', () => {
         //Toggle Nav
-    
-        if(burger.style.display === 'none'){
-           console.log('nav')
-        } else {
             nav.classList.toggle('nav-active');
-        }
         
         //Animate Links
 
@@ -17,7 +12,6 @@ const navSlide = () =>{
         //Burger Animation
         burger.classList.toggle('toggle');
 
-        console.log('print')
     });
 
     
