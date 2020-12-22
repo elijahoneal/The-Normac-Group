@@ -63,6 +63,10 @@ a{
     text-decoration: none;
 }
 
+p{
+	line-height: 1.5;
+}
+
 body {
 	background-color:#4169e1;
 
@@ -144,7 +148,7 @@ a:hover {
 	text-align: center;
     font-family: 'Noto Sans TC', sans-serif;
     width: 90%;
-    margin: 1rem auto;
+    margin: 2rem auto;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
@@ -154,8 +158,8 @@ a:hover {
 
 .feature-text {
 	color:#4169e1;
-	width:50%;
-	font-size: 0.8rem;
+	width:100%;
+	font-size: 1rem;
 	padding: 1rem;
 	
 }
@@ -170,30 +174,33 @@ a:hover {
 
 .sum {
     display:flex;
-    flex-flow: row nowrap;
+    flex-flow: column nowrap;
     width: 90%;
-    justify-content: space-between;
-    margin: 0 auto;
+	justify-content: space-between;
+	font-family: 'Noto Sans TC', sans-serif;
+    margin: 3rem auto;
 }
 
 .sum img {
 	width: 100%;
 	height:auto;
+	
 }
 
 figure {
-    width: 50%;
+    width: 100%;
 }
 
 figcaption {
 	font-size: 0.4rem;
 	font-weight: 100;
+	text-align: center;
 }
 
 .sum-text {
     display:flex;
     flex-flow: column nowrap;
-    width: 45%;
+    width: 100%;
 }
 
 /* Services */
@@ -207,7 +214,7 @@ h2 {
 	font-weight: 700;
 	margin: 1rem auto;
 	border-bottom: 0.1rem solid #4169e1;
-	width: 50%;
+	width: 100%;
 }
 
 
@@ -285,6 +292,12 @@ footer {
 		align-items: center;
 		transform: translateY(0);
 	}
+
+	.feature-text, .sum-text {
+		width: 80%;
+		margin: 0 auto;
+	}
+
 }
 
 /* Desktop Size */
@@ -297,7 +310,20 @@ footer {
 		align-items:baseline;
 	}
 
-	.service, .testimonial {
+	.sum {
+		display: flex;
+		flex-flow: row nowrap;
+	}
+
+	.sum-text {
+		width: 45%;
+	}
+
+	figure {
+		width:45%;
+	}
+
+	.service {
 		width: 30%;
 
 	}
