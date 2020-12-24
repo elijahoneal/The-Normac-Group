@@ -272,6 +272,10 @@ label , input , textarea {
 
 }
 
+#name , #email {
+	color: #000;
+}
+
 .hidden {
 	display:none;
 }
