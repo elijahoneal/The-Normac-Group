@@ -254,6 +254,27 @@ footer {
 
 }
 
+form {
+	display: flex;
+	flex-flow: column nowrap;
+	width:90%;
+	margin: 0.5rem auto;
+	padding: 1rem 0;
+	align-items: center;
+	border: 0.2rem solid #4169e1;
+}
+label , input , textarea {
+	width: 80%;
+	margin: 0.25rem auto;
+	color:  #4169e1;
+	font-size: 1.3rem;
+	font-family: 'Noto Sans TC', sans-serif;
+
+}
+
+.hidden {
+	display:none;
+}
 /* Desktop Size */
 
 @media only screen and (min-width: 900px)  {
