@@ -5,15 +5,14 @@ import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import { useHistory } from 'react-router';
 import { styled } from '@material-ui/core/styles';
-import useMediaQuery from '@material-ui/core/useMediaQuery';
-
 
 
 const NavBar = styled(Paper)({
-  backgroundColor:  'green',
-  '@media (min-width: 800px)': {
-    backgroundColor: 'red'
-  }
+  backgroundColor:  '#2196f3',
+  color: '#fff',
+  // '@media (min-width: 800px)': {
+  //   backgroundColor: 'red'
+  // }
 
 })
 
@@ -50,7 +49,7 @@ const Nav = () => {
         <Tabs
           value={value}
           indicatorColor="primary"
-          textColor="primary"
+          textColor="inherit"
           onChange={handleChange}
           aria-label="disabled tabs example"
           centered
