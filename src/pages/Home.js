@@ -112,58 +112,58 @@ return (
         <h4 className={classes.itemTitle}>Our Services</h4>
         <section className={classes.items}>
             
-                <section className={classes.item}>
+                <article className={classes.item}>
                     
                         <img src={Consultation} alt="consultation by IconMark from the Noun Project" className={classes.icons}/>
                         <Typography variant = 'h5'>Consultation</Typography>
                         <Typography variant = 'body1'>We’ll help your business reach the goals you’ve envisioned.</Typography>
                    
-                </section>
+                </article>
 
-                <section className={classes.item}>
+                <article className={classes.item}>
                    
                         <img src={Credit} alt="credit by Icongeek26 from the Noun Project" className={classes.icons}/>
                         <Typography variant = 'h5'>Credit Repair</Typography>
                         <Typography variant = 'body1'>Eliminate bad credit and create opportunities for growth within your business.</Typography>
                     
-                </section>
+                </article>
 
-                <section className={classes.item}>
+                <article className={classes.item}>
                  
                         <img src={Marketing} alt="marketing by Gregor Cresnar from the Noun Project" className={classes.icons}/>
                         <Typography variant = 'h5'>Marketing</Typography>
                         <Typography variant = 'body1'>Spread the word! Allow us to help you network and reach potential clients.</Typography>
                   
-                </section>
+                </article>
                 
         </section>
-        <Link to='/services'><Button href="services.html" className={classes.buttons}>All Services</Button></Link>
-        <h4 className={classes.itemTitle}>Testimonials</h4>
+            <Link to='/services'><Button href="services.html" className={classes.buttons}>All Services</Button></Link>
+            <h4 className={classes.itemTitle}>Testimonials</h4>
     
         <section className={classes.items}>
         
                
-                    <section className={classes.item}>
+                    <article className={classes.item}>
                         <Typography variant = 'h5'>Consultation</Typography>
                         <Typography className={classes.testimonialBody} variant = 'body1'>I’ve been a client with The Normac Group since 2008 and I’ve hired them every year for my annual gala. They are always on time , thorough and professional.</Typography>
                         <Typography className={classes.testimonialQoute} variant = 'body1'>Clara, C Gates foundation, inc</Typography>
-                    </section>
+                    </article>
               
 
                 
-                    <section className={classes.item}>
+                    <article className={classes.item}>
                         <Typography variant = 'h5'>Credit Repair</Typography>
                         <Typography className={classes.testimonialBody} variant = 'body1'>At first I was skeptical and I didn’t think they would be able to help get my credit in better shape. After the first month a repossession I had for over 5 years was deleted. I’ve paid other companies monthly and got no results. Whatever they do it works and i’m forever grateful.Eliminate bad credit and create opportunities for growth within your business</Typography>
                         <Typography className={classes.testimonialQoute} variant = 'body1'>Juan Rodriguez Houston, Texas</Typography>
-                    </section>
+                    </article>
                
 
                 
-                    <section className={classes.item}>
+                    <article className={classes.item}>
                         <Typography variant = 'h5'>Marketing</Typography>
                         <Typography className={classes.testimonialBody} variant = 'body1'>Working with Cam the owner was an amazing opportunity. He’s what I call an “hidden gem creative”. He has the ability to think quickly on his toes and provide a solution to our problems and help us cut cost, making my business all the more effective. He’s always been available to answer questions and even when he wasn’t his staff got back to us promptly.</Typography>
                         <Typography className={classes.testimonialQoute} variant = 'body1'>Jeremy Lockett On site media llc</Typography>
-                    </section>
+                    </article>
                
                 
         </section>
