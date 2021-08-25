@@ -3,6 +3,16 @@
   min-width: 365px;
 }
 
+.logo {
+  width: 40%;
+  height: auto;
+  margin: 2rem auto 1rem;
+}
+
+.MuiTypography-h3 {
+  margin-bottom: 1.5rem;
+}
+
 
 
 a{

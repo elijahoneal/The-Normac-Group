@@ -10,9 +10,9 @@ import { styled } from '@material-ui/core/styles';
 const NavBar = styled(Paper)({
   backgroundColor:  '#2196f3',
   color: '#fff',
-  // '@media (min-width: 800px)': {
-  //   backgroundColor: 'red'
-  // }
+  width: '90%',
+  margin: '1rem auto'
+ 
 
 })
 
@@ -62,12 +62,6 @@ const Nav = () => {
       </NavBar>
     );
    
-       
-            
-            // <NavLink to='/' >Home</NavLink>
-            // <NavLink to='/services' >Our Services</NavLink>
-            // <NavLink to='/about' >About Us</NavLink>
-            // <NavLink to='/contact' >Contact</NavLink>
         
     
 

@@ -1,16 +1,19 @@
 import { Route  , Switch} from 'react-router-dom';
 import './App.css';
+// pages
 import Nav from './components/Nav'
 import Home from './pages/Home'
 import About from './pages/About'
 import Services from './pages/Services'
 import Contact from './pages/Contact'
-
+// logo
+import Logo from './images/the-normac-group-logo.png'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <header>
+        <img src={Logo} alt="The Normac Group" className="logo"></img>
         <Nav/>
       </header>
       <main>
