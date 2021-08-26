@@ -43,13 +43,13 @@ const useStyles = makeStyles({
             flexDirection: 'row',
             flexWrap: 'wrap',
             justifyContent: 'space-evenly',
-            alignItems: 'flex-start'
+            alignItems: 'baseline'
         },
     },
     item: {
         margin: '1rem auto',
         '@media (min-width: 768px)': {
-            width: '33%',
+            width: '30%',
             height: 'auto',
             
         }
@@ -82,7 +82,7 @@ const useStyles = makeStyles({
           }
     },
     aboutUs: {
-        width: '75%',
+        width: '90%',
         margin: ' 2rem auto'
     },
     aboutTitle: {
@@ -90,6 +90,15 @@ const useStyles = makeStyles({
         fontSize: '2rem',
         color: '#fff',
         margin: '1rem'
+    },
+    form: {
+        width: '80%',
+        margin: '1rem auto',
+        display: 'flex',
+        flexDirection: 'column'
+    },
+    textArea: {
+        minHeight: '8rem'
     }
 })
 
