@@ -92,13 +92,23 @@ const useStyles = makeStyles({
         margin: '1rem'
     },
     form: {
-        width: '80%',
+        width: '90%',
+        height: '22rem',
         margin: '1rem auto',
         display: 'flex',
-        flexDirection: 'column'
+        flexDirection: 'column',
+        justifyContent: 'space-evenly',
+    
+    },
+    input: {
+        width: '50%',
+        height: 'auto',
+        margin: 'auto'
     },
     textArea: {
-        minHeight: '8rem'
+        minHeight: '8rem',
+        width: '50%',
+        margin: 'auto'
     }
 })
 

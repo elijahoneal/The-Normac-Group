@@ -1,7 +1,11 @@
 import React, { useState } from 'react';
-import {  Button,  TextareaAutosize,  TextField } from '@material-ui/core';
+import { Typography, Button,  TextareaAutosize,  TextField } from '@material-ui/core';
 import { styled } from '@material-ui/core/styles';
 import useStyles from '../hook/Style';
+
+// images
+import ContactFeat from '../images/contact.jpg'
+
 const ContactPage = styled('div') ({
     width: '90%',
     margin: '0 auto',
@@ -42,11 +46,15 @@ const Contact = () => {
     };
     return (
         <ContactPage>
-            <article>
-                <h1>Learn More</h1>
-                <p>If you have any questions about our offer, please contact us by filling out the form below and we will get in touch with you shortly. Alternatively, you can give us a call – we hope to hear from  you soon!
-                </p>
-            </article>
+             <div className={classes.overlay}>
+                    <img className={classes.imgStyle} src={ContactFeat} alt="by Alex Andrews from Pexels" />  
+                    <article className={classes.featureText}> 
+                        <h2 className={classes.aboutTitle}>Learn More</h2>
+                        <Typography className={classes.featureBody} variant = 'body1'>If you have any questions about our offer, please contact us by filling out the form below and we will get in touch with you shortly. Alternatively, you can give us a call – we hope to hear from  you soon!
+                        </Typography>
+                    </article>
+                </div>
+        
             <form className={classes.form} onSubmit={handleSubmit}>
                 <TextField
                 required
@@ -54,6 +62,8 @@ const Contact = () => {
                 name="name"
                 type="text"
                 placeholder="Name"
+                variant='outlined'
+                className={classes.input}
                 onChange={onChange}
                 value={formData.name}
                 >
@@ -65,11 +75,13 @@ const Contact = () => {
                 name="email"
                 type="email"
                 placeholder="Email"
+                variant='outlined'
+                className={classes.input}                
                 onChange={onChange}
                 value={formData.email}
                 >   
                 </TextField>
-                <TextareaAutosize className={classes.textArea} multiline placeholder="Message"/>
+                <TextareaAutosize variant='outlined' className={classes.textArea} placeholder="...."/>
                 
                 <Button
                 className={classes.buttons}
