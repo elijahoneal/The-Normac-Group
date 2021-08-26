@@ -18,7 +18,7 @@ const NavBar = styled(Paper)({
 
 const Nav = () => {
 
-  const [value, setValue] = React.useState(2);
+  const [value, setValue] = React.useState(0);
   const { push } = useHistory()
   
   const handleChange = (event, newValue) => {
