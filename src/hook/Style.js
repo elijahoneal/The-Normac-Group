@@ -70,9 +70,21 @@ const useStyles = makeStyles({
         width: '15%',
         height: 'auto'
     },
+    startButton: {
+        backgroundColor:'#2196f3',
+        color: '#fff',
+        fontSize: '1.1rem',
+        padding: '0.5rem',
+        margin: '1rem auto',
+        '&:hover': {
+            backgroundColor: '#777777',
+            color: '#fff'
+          }
+    },
+
     buttons: {
-        backgroundColor:  '#2196f3',
-        color: '#ffffff',
+        backgroundColor: '#2196f3',
+        color: '#fff',
         width: '50%',
         fontSize: '1.1rem',
         padding: '0.5rem',
@@ -94,7 +106,7 @@ const useStyles = makeStyles({
     form: {
         width: '90%',
         height: '22rem',
-        margin: '1rem auto',
+        margin: '2rem auto',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'space-evenly',
@@ -103,7 +115,7 @@ const useStyles = makeStyles({
     input: {
         width: '50%',
         height: 'auto',
-        margin: 'auto'
+        margin: ' 0.25rem auto'
     },
     textArea: {
         minHeight: '8rem',

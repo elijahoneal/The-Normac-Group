@@ -30,9 +30,11 @@ return (
             <div className={classes.overlay}>
                 <img className={classes.imgStyle} src={Feature} alt="Table with documents, by fauxels from Pexels" />
                 <article className={classes.featureText}>
-                    <Typography variant = 'h3'>Let us help you grow your business!</Typography>
-                    <Typography variant = 'h5'>Our skilled professional are here to help you every step of the way. Making your life better is our priority.</Typography>
+                    <Typography variant = 'h5'>Let us help you grow your business!</Typography>
+                    <Typography variant = 'body1'>Our skilled professional are here to help you every step of the way. Making your life better is our priority.</Typography>
+                    <Link to='/contact'><Button className={classes.startButton}>Let's Get Started</Button></Link>
                 </article>
+                
             </div>
         </section>
 

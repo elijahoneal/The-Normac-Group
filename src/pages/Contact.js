@@ -63,6 +63,7 @@ const Contact = () => {
                 type="text"
                 placeholder="Name"
                 variant='outlined'
+                helperText="Please Enter Name"
                 className={classes.input}
                 onChange={onChange}
                 value={formData.name}
@@ -76,12 +77,13 @@ const Contact = () => {
                 type="email"
                 placeholder="Email"
                 variant='outlined'
+                helperText="Please Enter Valid Email"
                 className={classes.input}                
                 onChange={onChange}
                 value={formData.email}
                 >   
                 </TextField>
-                <TextareaAutosize variant='outlined' className={classes.textArea} placeholder="...."/>
+                <TextareaAutosize variant='outlined' className={classes.textArea} placeholder="Message...."/>
                 
                 <Button
                 className={classes.buttons}

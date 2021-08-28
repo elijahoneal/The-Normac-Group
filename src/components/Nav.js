@@ -7,11 +7,15 @@ import { useHistory } from 'react-router';
 import { styled } from '@material-ui/core/styles';
 
 
+
+
 const NavBar = styled(Paper)({
   backgroundColor:  '#2196f3',
   color: '#fff',
-  width: '90%',
-  margin: '1rem auto'
+  margin: '1rem auto',
+  '@media (min-width: 768px)': {
+    width: '90%'
+}
  
 
 })
@@ -23,7 +27,6 @@ const Nav = () => {
   
   const handleChange = (event, newValue) => {
     setValue(newValue);
-    console.log(newValue)
     switch(newValue){
       case 0:
         push("/");
@@ -44,22 +47,24 @@ const Nav = () => {
 
   
     return (
+ 
+        <NavBar square>
+          <Tabs
+            value={value}
+            indicatorColor="primary"
+            textColor="inherit"
+            onChange={handleChange}
+            aria-label="disabled tabs example"
+            centered
+      
+          >
+            <Tab label="HOME" />
+            <Tab label="OUR SERVICES"/>
+            <Tab label="ABOUT US" />
+            <Tab label="CONTACT" />
+          </Tabs>
+        </NavBar>
 
-      <NavBar square>
-        <Tabs
-          value={value}
-          indicatorColor="primary"
-          textColor="inherit"
-          onChange={handleChange}
-          aria-label="disabled tabs example"
-          centered
-        >
-          <Tab label="HOME" />
-          <Tab label="OUR SERVICES"/>
-          <Tab label="ABOUT US" />
-          <Tab label="CONTACT" />
-        </Tabs>
-      </NavBar>
     );
    
         
