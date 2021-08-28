@@ -111,13 +111,12 @@ const useStyles = makeStyles({
         justifyContent: 'space-evenly',
     },
     input: {
-        width: '51%',
-        height: 'auto',
+
         margin: ' 0.25rem auto'
     },
     textArea: {
         minHeight: '6rem',
-        width: '50%',
+
         margin: '0.25rem auto'
     }
 })
