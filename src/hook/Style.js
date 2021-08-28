@@ -77,20 +77,20 @@ const useStyles = makeStyles({
         padding: '0.5rem',
         margin: '1rem auto',
         '&:hover': {
-            backgroundColor: '#777777',
+            backgroundColor: '#777',
             color: '#fff'
           }
     },
 
     buttons: {
         backgroundColor: '#2196f3',
-        color: '#ffffff',
+        color: '#fff',
         width: '50%',
         fontSize: '1.1rem',
         padding: '0.5rem',
         margin: '1rem auto',
         '&:hover': {
-            backgroundColor: '#777777'
+            backgroundColor: '#777'
           }
     },
     aboutUs: {
@@ -105,7 +105,6 @@ const useStyles = makeStyles({
     },
     form: {
         width: '90%',
-        height: '20rem',
         margin: '2rem auto',
         display: 'flex',
         flexDirection: 'column',
@@ -119,7 +118,7 @@ const useStyles = makeStyles({
     textArea: {
         minHeight: '6rem',
         width: '50%',
-        margin: 'auto'
+        margin: '0.25rem auto'
     }
 })
 
