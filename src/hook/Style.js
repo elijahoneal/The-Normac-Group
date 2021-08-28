@@ -110,8 +110,6 @@ const useStyles = makeStyles({
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'space-evenly',
-
-    
     },
     input: {
         width: '51%',
