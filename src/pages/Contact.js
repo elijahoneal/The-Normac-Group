@@ -58,12 +58,10 @@ const Contact = () => {
             <form className={classes.form} onSubmit={handleSubmit}>
                 <TextField
                 required
-
                 name="name"
                 type="text"
                 placeholder="Name"
                 variant='outlined'
-
                 className={classes.input}
                 onChange={onChange}
                 value={formData.name}
@@ -72,12 +70,10 @@ const Contact = () => {
 
                 <TextField
                 required
-
                 name="email"
                 type="email"
                 placeholder="Email"
                 variant='outlined'
-
                 className={classes.input}                
                 onChange={onChange}
                 value={formData.email}
