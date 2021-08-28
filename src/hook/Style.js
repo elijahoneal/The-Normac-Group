@@ -105,20 +105,21 @@ const useStyles = makeStyles({
     },
     form: {
         width: '90%',
-        height: '22rem',
+        height: '20rem',
         margin: '2rem auto',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'space-evenly',
+
     
     },
     input: {
-        width: '50%',
+        width: '51%',
         height: 'auto',
         margin: ' 0.25rem auto'
     },
     textArea: {
-        minHeight: '8rem',
+        minHeight: '6rem',
         width: '50%',
         margin: 'auto'
     }
