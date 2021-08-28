@@ -58,12 +58,10 @@ const Contact = () => {
             <form className={classes.form} onSubmit={handleSubmit}>
                 <TextField
                 required
-                error = {formData.name ==='' ? true : false}
                 name="name"
                 type="text"
                 placeholder="Name"
                 variant='outlined'
-                helperText="Please Enter Name"
                 className={classes.input}
                 onChange={onChange}
                 value={formData.name}
@@ -72,12 +70,10 @@ const Contact = () => {
 
                 <TextField
                 required
-                error = {formData.email ==='' ? true : false}
                 name="email"
                 type="email"
                 placeholder="Email"
                 variant='outlined'
-                helperText="Please Enter Valid Email"
                 className={classes.input}                
                 onChange={onChange}
                 value={formData.email}
