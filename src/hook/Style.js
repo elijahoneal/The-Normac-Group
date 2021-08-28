@@ -84,7 +84,7 @@ const useStyles = makeStyles({
 
     buttons: {
         backgroundColor: '#2196f3',
-        color: '#fff',
+        color: '#ffffff',
         width: '50%',
         fontSize: '1.1rem',
         padding: '0.5rem',
