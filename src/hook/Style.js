@@ -112,7 +112,7 @@ const useStyles = makeStyles({
     },
     input: {
 
-        margin: ' 0.5rem auto'
+        margin: '0.5rem auto'
     },
     textArea: {
         minHeight: '6rem',
