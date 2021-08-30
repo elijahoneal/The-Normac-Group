@@ -31,15 +31,12 @@ const Services = () => {
                         </Typography>
                     </article>
                 </div>
-            
-
-            <section className="sum">
-                <article className="sum-text">
+                <article className={classes.aboutUs}>
                     <h2 className={classes.itemTitle}>Business Startup Package</h2>
-                    <Typography className={classes.aboutUs} variant = 'body1'>This package aligns future entrepreneurs with our business liaison to turn their concept of a company into a legally bound company. Clients work hand in hand with a business liaison to ensure their company has been registered with their perspective state and established to see them off for proper success. This package also includes general services such as: business cards, business credit registration, Email creation and several hours business coaching.</Typography>
-                    <Typography className={classes.aboutUs} variant = 'body1'>Often times entrepreneurs are more focused on the idea product or service and forget the legal part. We take pride in helping fill that void to ensure every person with a drive, ambition and desire to have their own can follow through and become that CEO they wish to become.</Typography>
+                    <Typography variant = 'body1'>This package aligns future entrepreneurs with our business liaison to turn their concept of a company into a legally bound company. Clients work hand in hand with a business liaison to ensure their company has been registered with their perspective state and established to see them off for proper success. This package also includes general services such as: business cards, business credit registration, Email creation and several hours business coaching.</Typography>
+                    <Typography variant = 'body1'>Often times entrepreneurs are more focused on the idea product or service and forget the legal part. We take pride in helping fill that void to ensure every person with a drive, ambition and desire to have their own can follow through and become that CEO they wish to become.</Typography>
                 </article>
-            </section>
+         
 
             <section className={classes.items}>
                     <section className={classes.item}>

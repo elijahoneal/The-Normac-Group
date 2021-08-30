@@ -28,9 +28,9 @@ const About = () => {
                         </Typography>
                     </article>
                 </div>
-                <article>
+                <article className={classes.aboutUs}>
               
-                    <Typography className={classes.aboutUs} variant = 'body1'>Our dedicated team of affiliates provide our clients with the best services and business needs available. Years of trust, networking, and building solid relationships with our clients gives us a strong foundation to help you optimize your results. Additionally, we offer major credit repair services.
+                    <Typography variant = 'body1'>Our dedicated team of affiliates provide our clients with the best services and business needs available. Years of trust, networking, and building solid relationships with our clients gives us a strong foundation to help you optimize your results. Additionally, we offer major credit repair services.
                     There’s no job too big or too small, our business is helping your business become a better business.</Typography>  
                    
                   
